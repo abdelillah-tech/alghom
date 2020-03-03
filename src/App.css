@@ -1,0 +1,242 @@
+@import url('https://db.onlinewebfonts.com/c/8b4f4718b02a834f95b7eabe2b82d9a5?family=TR2N');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+* {
+    margin  : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: linear-gradient( #030303, #03266e, #171616);*/
+    background: black;
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+    overflow: hidden
+}
+
+header {
+    min-height: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
+}
+
+header > h1{
+    margin-right: 20px;
+    font-size: 60px;
+    font-family: Tr2n;
+    color: #164AFF;
+}
+
+.main-view{
+    height: 100%;
+    display: inline-grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Start of nav-bar*/
+#side-nav {
+    position: fixed;
+    height: 100vh;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    transition: 0.5s;
+    width: 20%;
+}
+
+#side-nav button {
+    font-family: Tr2n;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    color: #164AFF;
+    width: 80%;
+    height: 10%;
+    display: block;
+    transition: 0.3s;
+}
+
+#side-nav button:hover {
+    font-size: 35px;
+    color: #f1f1f1;
+}
+/* End of nav-bar*/
+
+/* Middle content*/
+/* Start of about */
+.description {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: Orbitron;
+    font-size: 30px;
+    color: white;
+    position: relative;
+}
+
+.about {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    text-align: center;
+    position: absolute;
+    height: 100%;
+}
+
+.photo {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    text-align: center;
+}
+
+.my-dis{
+    /*margin-top: 50px;*/
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#big-circle {
+    animation: big-c 4s infinite linear;
+    transform-origin: center;
+}
+  
+#med-circle {
+  animation: med-c 3s infinite linear;
+  transform-origin: center;
+}
+  
+#small-circle {
+  animation: big-c 2s infinite linear;
+  transform-origin: center;
+}
+  
+@keyframes big-c {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+  
+@keyframes med-c {
+  from{
+    transform: rotateZ(360deg);
+  }
+  to{
+    transform: rotateZ(0deg);
+  }
+}
+
+#batouch {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+/* End of about */
+/* Start of hobies */
+
+/* End of hobies */
+/* Start of skills */
+.skills{
+  /*text-align: center;*/
+}
+
+.titles {
+  margin-top : 5%;
+}
+
+.skills h1{
+  font-size: 30px;
+  font-family: Tr2n;
+  color: #164AFF; 
+}
+
+.skills p{
+  font-size: 35px;
+  font-family: Orbitron;
+  color: #f1f1f1;
+}
+/* End of skills */
+/* Start of education */
+
+/* End of education */
+/* Start of projects */
+
+/* End of projects */
+/* Start of formulaire */
+.contact {
+  height: 100%;
+  position: absolute;
+  left: 23%;
+}
+
+.formulaire {
+  margin-top: 60px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  font-family: Orbitron;
+	width:439px;
+	height:50px;
+	background: transparent;
+	border:3px solid #164AFF;
+	padding:10px;
+	margin-top:10px;
+	font-size:0.7em;
+  color:#f1f1f1;
+}
+
+::placeholder {
+  color: #f1f1f1;
+  opacity: 0.7;
+}
+
+.message {
+  height:220px;
+  resize: none;
+}
+
+.send-mail {
+  color:#164AFF;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* End of formulaire */
+/* End of middle content */
+
+/* Start of Icons div */
+#dir-icons {
+  position: -webkit-sticky;
+  padding: 5% 0;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/* End of Icons div */
