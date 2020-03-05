@@ -34,7 +34,7 @@ class ContactContent extends Component {
             buttonText: 'Message Sent'
         }
 
-        axios.post('http://localhost:4444/api/v1', data)
+        axios.post('https://alghom-mail-services.now.sh/api/v1', data)
             .then(res => {
                 this.setState({ mailSent: true }, this.resetForm())
             })
