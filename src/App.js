@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Icons from './components/Icons';
 import AboutContent from './components/AboutContent';
 import ContactContent from './components/ContactContent';
-import Icons from './components/Icons';
 import SkillsContent from './components/SkillsContent';
+import EducationContent from './components/EducationContent';
+import ProjectsContent from './components/ProjectsContent';
+import HobiesContent from './components/HobiesContent';
 
 class App extends Component {
 
@@ -31,16 +34,16 @@ class App extends Component {
           component = <AboutContent />
           break;
       case 2 :
-          
+          component = <HobiesContent />
           break;
       case 3 :
           component = <SkillsContent />
           break;
       case 4 :
-          
+          component = <EducationContent />
           break;
       case 5 :
-
+          component = <ProjectsContent />
           break;
       case 6 :
           component = <ContactContent />
@@ -56,19 +59,23 @@ class App extends Component {
     return (
       <div className="App">
             <header>
-              <h1>AL/GHOM</h1>
+              <div className="header-cont">
+                <h1>AL/GHOM</h1>
+              </div>
             </header>
             <div className="main-view">
-              <div id="side-nav">
-                <button onClick={() => this.handleClick(1)}>about</button>
-                <button onClick={() => this.handleClick(2)}>hobies</button>
-                <button onClick={() => this.handleClick(3)}>skills</button>
-                <button onClick={() => this.handleClick(4)}>education</button>
-                <button onClick={() => this.handleClick(5)}>projects</button>
-                <button onClick={() => this.handleClick(6)}>contact</button>
+              <div className="side-nav">
+                <div className="nav-cont">
+                  <button onClick={() => this.handleClick(1)}>a propos</button>
+                  <button onClick={() => this.handleClick(2)}>passions</button>
+                  <button onClick={() => this.handleClick(3)}>competences</button>
+                  <button onClick={() => this.handleClick(4)}>parcours</button>
+                  <button onClick={() => this.handleClick(5)}>travaux</button>
+                  <button onClick={() => this.handleClick(6)}>contacts</button>
+                </div>
               </div>
               <div className="description">{this.getComponent()}</div>
-              <div id="dir-icons"><Icons ref={this.IconsElement}/></div>
+              <div className="dir-icons"><Icons ref={this.IconsElement}/></div>
             </div>
       </div>
     );

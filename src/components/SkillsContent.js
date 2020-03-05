@@ -5,19 +5,19 @@ class SkillsContent extends Component{
         return(
             <div className="skills">
                 <div className="titles">
-                    <h1>programming languages</h1>
+                    <h1>langages de programmation</h1>
                     <p>java&nbsp;&nbsp;&nbsp;python&nbsp;&nbsp;&nbsp;javascript&nbsp;&nbsp;&nbsp;php</p>
                 </div>
                 <div className="titles">
-                    <h1>backend technologies</h1>
+                    <h1>technologies backend</h1>
                     <p>springboot&nbsp;&nbsp;&nbsp;django</p>
                 </div>
                 <div className="titles">
-                    <h1>frontend technologies</h1>
+                    <h1>technologies frontend</h1>
                     <p>react&nbsp;&nbsp;&nbsp;html&nbsp;&nbsp;&nbsp;css</p>
                 </div>
                 <div className="titles">
-                    <h1>data base</h1>
+                    <h1>bases de donnees </h1>
                     <p>postgress&nbsp;&nbsp;&nbsp;mysql&nbsp;&nbsp;&nbsp;monogodb</p>
                 </div>
                 <div className="titles">
@@ -25,8 +25,8 @@ class SkillsContent extends Component{
                     <p>machine&nbsp;learning&nbsp;&nbsp;&nbsp;data&nbsp;viz</p>
                 </div>
                 <div className="titles">
-                    <h1>web design</h1>
-                    <p>figma</p>
+                    <h1>autres</h1>
+                    <p>figma&nbsp;&nbsp;&nbsp;git&nbsp;&nbsp;&nbsp;bash</p>
                 </div>
             </div>
         );

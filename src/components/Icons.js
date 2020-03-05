@@ -51,7 +51,7 @@ class Icons extends Component{
     };
     render(){
         return(
-            <div>
+            <div className="icon-cont">
                 <img src={this.state.icon} className="icon" alt="icon"></img>
             </div>
         );

@@ -21,7 +21,12 @@ class AboutContent extends Component {
                 </div>
                 <div className="my-dis">
                     <p>
-                        hi i'm ghomari abdelillah a web developer with multiple skils, i can build any thing you want from scratch.
+                        GHOMARI Abdelillah, 23 ans. 
+                        Développeur et Data enthusiast avec de multiples compétences en informatique et en statistiques et une vision créative, 
+                        j'ai une grande capacité en résolution de problèmes, 
+                        passionné par différentes nouvelles technologies telles que développent web et Deep Learning, 
+                        mon travail acharné, 
+                        mon esprit critique et ma capacité d'adaptation me permettent de relever les défis qui se présentent à moi. 
                     </p>
                 </div>
             </div>
