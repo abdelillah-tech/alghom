@@ -21,7 +21,7 @@ class App extends Component {
     super(props)
     this.state = {
       num: 1,
-      toggle:false,
+      toggle: true,
       show: <AboutContent />
     }
     this.IconsElement = React.createRef();
