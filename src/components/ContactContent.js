@@ -62,7 +62,7 @@ class ContactContent extends Component {
                     <input type="text" className="last-name" placeholder="last name" onChange={e => this.setState({ lname: e.target.value })} required value={this.state.lname}></input>
                     <input type="text" className="email" onChange={e => this.setState({ email: e.target.value })} placeholder="your@email.com" required value={this.state.email}></input>
                     <input type="text" className="company" placeholder="company" value={this.state.company} onChange={e => this.setState({ company: e.target.value })}></input>
-                    <textarea className="message" placeholder="message" onChange={e => this.setState({ message: e.target.value })} maxlength="250" required value={this.state.message}></textarea>
+                    <textarea className="message" placeholder="message" onChange={e => this.setState({ message: e.target.value })} maxLength="250" required value={this.state.message}></textarea>
                     <button type="submit" className="send-mail">{this.state.buttonText}</button>
                 </form>
                 <div className="email-number">
