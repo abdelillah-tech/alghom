@@ -53,13 +53,18 @@ header img {
 }
 
 .description {
-    /*grid-area: description;*/
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     font-family: Orbitron;
     color: white;
     position: relative;
     text-align: center;
     overflow-y: scroll;
     padding-bottom: 5rem;
+}
+
+::-webkit-scrollbar { 
+    display: none;
 }
 
 .dir-icons {
